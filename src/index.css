@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Abril Fatface", serif;
+  --font-accent: "Space Grotesk", sans-serif;
+
+  --color-warm: #f5f2ed;
+  --color-ink: #1a1a1a;
+  --color-accent-gray: #e5e5e1;
+  --color-line: rgba(26, 26, 26, 0.1);
+
+  /* Zones */
+  --color-zone-human: #1e3a8a;
+  --color-zone-recommends: #d97706;
+  --color-zone-review: #ea580c;
+  --color-zone-autonomous: #16a34a;
+  --color-zone-escalate: #dc2626;
+}
+
+:root {
+  --bg-warm: #f5f2ed;
+  --text-ink: #1a1a1a;
+  --accent-gray: #e5e5e1;
+  --line: rgba(26, 26, 26, 0.1);
+  --blue: #1e3a8a;
+  --amber: #d97706;
+  --orange: #ea580c;
+  --green: #16a34a;
+  --red: #dc2626;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-warm);
+  color: var(--text-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display { font-family: 'Abril Fatface', serif; }
+.font-accent { font-family: 'Space Grotesk', sans-serif; }
+
+.perspective-1000 { perspective: 1000px; }
+.preserve-3d { transform-style: preserve-3d; }
+.backface-hidden { backface-visibility: hidden; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-warm); }
+::-webkit-scrollbar-thumb { background: #d1d1cf; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #b1b1af; }
+
+.editorial-grid {
+  background-image: radial-gradient(#d1d1cf 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+}
+
+.text-balance { text-wrap: balance; }
+
+/* Custom Design Theme Classes */
+.card {
+  background: white;
+  border: 1px solid var(--line);
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.node {
+  width: 100%;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.zone-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  opacity: 0.6;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.rationale-text {
+  font-style: italic;
+  line-height: 1.6;
+  color: #4a4a4a;
+  font-size: 14px;
+  border-left: 2px solid var(--line);
+  padding-left: 16px;
+  margin-top: 16px;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "yl-app-human-ai-decision-rights-mapper",
+  "description": "A structured classification tool for mapping every decision in a business process to accountability zones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
